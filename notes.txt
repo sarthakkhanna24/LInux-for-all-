@@ -1,0 +1,120 @@
+HOSTNAME command
+
+#hostname -s
+ - used to display the short form of the host name which is cut-off after the first dot(.)
+ 
+ hostname -i
+ - to display the local host ip
+ 
+ hostname -I
+ - to display the actual ip
+ 
+ Change the name of the host in linux
+ #sudo hostname _____(new hostname)
+ 
+ change hostname // recover hostname
+ 
+- create a file having the hostname you wanna change
+   #sudo hostname -F file.txt
+    here (F) will read the hostname from the given file
+ 
+PRINT HOSTNAME
+
+- #sudo hostname -f (here f will print the hostname)
+
+FOR FQDM(Fully Qualified Dommanin Name)
+ 
+ UNAME OMMAND
+ - it's an unix name command, it provides the hardware and software info
+   #uname
+   
+   #uname -a: it displays the entire details of the system, it's type,  	
+   
+   #uname -s: displays the kernel name
+   
+   #uname -v: gives the version of the kernel
+   
+   #uanme -r: gives the relese date of the kernel
+   
+   #uname -m: gives the bit processor
+   
+   #uname -p: gives the processor details
+   
+ * for linux networing commands device should be connected to internet
+ 
+Command to check the version of ping
+- #ping -V (here capital V signifies the version of ping package)
+
+INSTALL linux ping package
+- #sudo apt-get install -y iputils (here iputils is the package and -y is used to give yes permissions) 
+
+linux ping command
+- With the Linux ping command, we can also access the time duration for sending and receiving responses from a network. It works by sending a series of Internet Control Message Protocol (ICMP) messages to the target host and waiting for an ICMP echo message from and to the host and Device. That informs us about the execution of the network.
+Essentially it sends the ECHO_REQUEST message and awaits ECHO_RESPONSE. If the message shows “fast ping low latency” it means that the connection is fast. It’s measured in milliseconds.
+
+*from in ping command response
+- the destination and its ip address: the ip address maybe different of a website depending on your geographical location
+
+icmp=1 means
+ it shows the sequence no. of each ICMP packet increases by 1 for every subsequent echo request
+ 
+ttl = 56
+- it reprersents the no. of network hops a packet can take to reach the destination site
+
+
+time = 37.8ms
+- the time it took a packet to reach the destination and come back to source in milli seconds
+
+#ping 0
+- gives the ip of local host, helps to connect with the local host 
+
+TRACE ROUTE COMMAND
+- #traceroute 
+ this command is used to directly hop to the destination without hopping 
+
+-traceroute is a crucial tool in a network diagnostics, it identifies the path packates(ICMP) take from source from destination. this tool is universally available for linux, windoews and mac0S. THis tool is used to discover all the possible routes
+
+
+TROUBLE SHOOTING DNS ISSUES
+- DNS stores info related to domain name the client server service translate domain name to ip-address and vice-versa. 
+requirements:
+ -stable internet connection
+ -access to command terminal
+ -sudo priveledge
+ 
+* if ping is giving no response then the issue is in server side
+
+NSLOOKUP
+- it is an command line administrative tool for testing and trouble shooting dns server. It is a useful command for getting information from the DNS server.
+  ( # nslookup google.com )- nslookup followed by the domain name will display the "A record" (ip address of the domain name) 
+  
+  #nslookup ip_address - it's called reverse the dns lookup
+  
+  
+  
+  SHELL SCRIPTING
+  
+- create a file using the .sh extension
+- open the file and write following commands
+
+  #! (path of the bang)
+  echo "Hello World"
+
+- save and exit from the following file
+- try running the file using command
+	./fileName.sh
+	
+- if permission denied then make the file executable using command
+
+ #chmod +x fileName.sh
+ 
+- now the file is executable then run the file again ./fileName.sh
+ Hello World!
+ 
+ hence we got the output
+ 
+
+
+
+
+
