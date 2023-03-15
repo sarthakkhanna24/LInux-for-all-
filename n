@@ -1,0 +1,51 @@
+In this file all the commands useful for shell scripting is mentioned
+
+-Shell Script Intro
+ It is a programming language used for automation 
+ Shell comes after application and interacts with the kernel to perform tasks on hardware
+
+-Different Shells
+ There are various shells in a system like:
+ bash
+ c shell
+ z shell
+
+ To locate Shells in a system we use a command 
+
+ cat /etc/shells     this commad shows different shells present in your system
+
+
+
+-Creating first shell scipt
+ 
+ All the files of shell are created using .sh extension 
+ 
+ After Creating the first shell file we will declare SHEBANG for that particular file which is:
+ 
+ #!/bin/sh       here /bin/sh is the path of the shell script
+ 
+ echo "Hello World"  here echo is used to print the argument as it is.
+
+-Running Shell Script
+ 
+ After creating a shell file we will give it executable permission using the chmod command
+
+ commands:
+
+ touch file.sh     creating a shell script using .sh extenshion
+ 
+ vim file.sh       openong editor to write the shell script
+ code......        writing the scipt in the file
+
+ chmod u+x file.sh   giving executable permission to the file
+
+ ./file.sh         running the file
+
+ Hello World!   output
+
+
+-Variable in shell scripting
+
+ we will directly declare variable in shell using command
+
+ name="James Bond"     here name is the variable and James Bond is its value
